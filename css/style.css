@@ -4,5 +4,171 @@
 }
 @font-face {
   font-family: 'HeliosRounded';
-  src: url('../src/fonts/HeliosRounded.ttf') format('truetype'); /* caminho da fonte */
+  src: url('../src/fonts/HeliosRounded.ttf') format('truetype');
+}
+
+/*Estilo container geral*/
+.container {
+  display: flex;
+  background-color: #FFF;
+}
+
+/*Estilo Menu Lateral*/
+.left-nav {
+  height: 100vh;
+  width: 350px  !important; 
+  background-image: url("../src/image/background-menu.png");
+  background-position:left;
+  background-size: cover;
+  color: white; 
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+
+}
+
+/*Estilo da logo do sendfy no menu*/
+.logo-menu{
+  width: 250px;
+  margin-top: 70px;
+}
+
+/*Estilo div que contém Img user e Nome user*/
+.account-div{
+  display: flex;
+  align-items: center;
+  padding: 40px 0 20px 0;
+}
+
+/*Estilo img user*/
+.client-picture{
+  width:60px;
+  border-radius: 100%;
+  margin-right: 10px;
+}
+
+/*Estilo nome user*/
+.personal-data h1{
+  font-size:15px; 
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 15px;
+  overflow: hidden;
+}
+
+/*Estilo complemento user name*/
+.personal-data span{
+  font-size:11px; 
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 11px;
+  overflow: hidden;
+}
+
+
+/*Estilo itens menu*/
+.menu-components {
+  margin-top: 40px;
+}
+
+/*Estilo itens menu*/
+.menu-components a{
+  font-size:20px; 
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  line-height: 25px;
+  color: #FFF;
+  text-decoration: none;
+
+}
+
+/*Estilo icons menu*/
+.menu-components i{
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+/*Estilo botão de ajuda menu*/
+.help-button{
+  color: #FFF;
+  font-size: 20px;
+  border-radius: 30px;
+  letter-spacing: 2px;
+  padding: 5px 30px 5px 30px;
+  font-family: 'HeliosRounded', sans-serif;
+  background-color: #1d89eb;
+  margin-top: 100px;
+  margin-bottom: 40px;
+  transition: 1.3s ease-in-out;
+  text-decoration: none;
+}
+.help-button:hover{
+  background-color: #0c5eaa;
+  border-width: 5pt;
+  border-image-slice: 1;
+  transition: 2.3s ease-in-out;
+}
+
+/*Estilo lista menu*/
+.left-nav ul {
+  width: 100%;
+  list-style: none;
+  padding: 0;
+}
+.left-nav li {
+  padding: 10px 50px 10px 60px;
+  margin: 0;
+}
+
+/*Estilo restante do conteúdo*/
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size:15px; 
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  flex: 1;
+  padding: 20px;
+}
+
+/*Estilo barra de pesquisa*/
+.input-container {
+  position: relative;
+  width: 70%; 
+  margin-bottom: 15px; 
+}
+.input-container i {
+  position: absolute;
+  left: 10px; /* Ajuste conforme necessário para o posicionamento horizontal */
+  top: 50%; /* Alinhamento vertical */
+  transform: translateY(-50%);
+  color: #819db0 ; /* Cor do ícone */
+  font-size: 12px;
+  padding-right: 10px;
+}
+.input-container input {
+  padding-left: 30px;
+  width: calc(100% - 40px);
+  height: 30px;
+  background-color: #274152;
+  border: 1px solid #ffffff88;
+  border-radius: 40px;
+  color: #819db0;
+  font-size:12px; 
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  outline: none;
+}
+
+/*Estilo para menu ativo*/
+.active{
+  width: 100%;
+  border-left: 3px solid #FFF;
+  background-color: #ffffff25;
 }

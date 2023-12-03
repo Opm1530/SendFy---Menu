@@ -13,16 +13,43 @@
 </head>
 <body>
 
-  <!--Menu-->
-  <nav class="box-menu">
-    
-  </nav>
-  <!--Restante do conteúdo da página-->
-  <div>
+  <!--Container Geral-->
+  <div class="container">
+
+    <!--Menu-->
+    <nav class="left-nav">
+      <img class="logo-menu" src="src/image/logo.png">
+      <div class="account-div">
+        <img class="client-picture" src="src/image/client-picture.jpg">
+        <div class="personal-data">
+          <h1>Nome Usuário</h1>
+          <span>Sua Conta</span>
+        </div>
+      </div>
+      <div class="input-container">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" placeholder="Pesquisar">
+      </div>
+      <ul class="menu-components">
+        <li class="active"><i class="fa-solid fa-gauge"></i><a href="#">Dashboard</a></li>
+        <li><i class="fa-brands fa-square-whatsapp"></i><a href="#">Meus Números</a></li>
+        <li><i class="fa-solid fa-arrows-split-up-and-left"></i><a href="#">Redirect</a></li>
+        <li><i class="fa-solid fa-globe"></i><a href="#">Webhooks</a></li>
+        <li><i class="fa-regular fa-comment-dots"></i><a href="#">Campanhas</a></li>
+        <li><i class="fa-solid fa-rocket"></i><a href="#">Envio no privado</a></li>
+        <li><i class="fa-solid fa-wallet"></i><a href="#">Mensalidade</a></li>
+        <li><i class="fa-solid fa-puzzle-piece"></i><a href="#">Extensões</a></li>
+        <li><i class="fa-solid fa-code"></i><a href="#">Desenvolvedores</a></li>
+      </ul>
+      <a class="help-button" href="">ajuda</a>
+    </nav>
+
+    <!--Restante do conteúdo da página-->
+    <div class="main-content">
+      <h1>Conteúdo Principal</h1>
+      <p>Aqui está o conteúdo principal da página.</p>
+    </div>
 
   </div>
-    
-  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="js/controller.js"></script>
 </body>
 </html>
